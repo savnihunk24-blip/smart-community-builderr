@@ -2,7 +2,7 @@
 
 A web app that helps people **find nearby community support** — hospitals, clinics, food banks, shelters, and hotels/hostels — using live, real-world location data. It also includes a small AI assistant that understands what kind of help someone needs just from a sentence they type.
 
-🔗 **Live Demo:** [_add link here once GitHub Pages is enabled_](https://savnihunk24-blip.github.io/smart-community-builderr/)
+🔗 **Live Demo:** [_(https://savnihunk24-blip.github.io/smart-community-builderr/)_]
 
 ![Community Builder preview](./images/hero_illustration_1773080503146.png)
 
