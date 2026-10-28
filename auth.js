@@ -105,7 +105,7 @@ const API_URL = "https://community-backend-zhu0.onrender.com";
         const user = await api("/me", { headers: { Authorization: "Bearer " + token } });
 
         const hello = document.createElement("span");
-        hello.textContent = "Hi, " + user.name;
+        hello.textContent = "Hi, " + user.name + " (" + user.email + ")";
         const out = document.createElement("button");
         out.textContent = "Logout";
         out.onclick = () => {
@@ -118,6 +118,14 @@ const API_URL = "https://community-backend-zhu0.onrender.com";
         document.querySelectorAll("h1, h2, h3").forEach((h) => {
           if (h.textContent.includes("Welcome back")) {
             h.textContent = "Welcome back, " + user.name + ".";
+            const initials = user.name.slice(0, 2).toUpperCase();
+document.querySelectorAll("*").forEach((el) => {
+  if (el.children.length === 0) {
+    const t = el.textContent.trim();
+    if (t === "Savni Sawant") el.textContent = user.name;
+    if (t === "AD") el.textContent = initials;
+  }
+});
           }
         });
         return;
