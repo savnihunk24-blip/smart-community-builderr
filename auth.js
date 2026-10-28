@@ -138,6 +138,7 @@ document.querySelectorAll("*").forEach((el) => {
     login.textContent = "Login / Sign up";
     login.onclick = () => openModal("login");
     bar.appendChild(login);
+    openModal("login");
   }
 
   $("auth-submit").onclick = submit;
